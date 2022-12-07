@@ -4,12 +4,12 @@
         <script src="https://cdn.tailwindcss.com"></script>
         <script scr="app.js"></script>
     </head>
-    <body class="border-1px text-center text-white text-2xl">
+    <body class="text-center text-white text-2xl border-black border-1px">
         <div class="grid grid-rows-1 grid-flow-col h-16 w-96">
             <input class="display-block" type="text" col-span-3 border-black border-1px></input>
-                <button onclick="document.getElementById('CLRid').value=''">C</button>
+                <button class="bg-green-500 rounded border-white border-4px" onclick="document.getElementById('CLRid').value=''">C</button>
         </div>
-        <div class="grid grid-rows-4 grid-flow-col gap-1 h-96 w-96 border-black border-4px">
+        <div class="grid grid-rows-4 grid-flow-col gap-1 h-96 w-96">
             <button class="bg-green-500 rounded border-white border-4px" onclick="document.getElementById('NBRid').value='1'">1</button>
             <button class="bg-green-500 rounded border-white border-4px" onclick="document.getElementById('NBRid').value='4'">4</button>
             <button class="bg-green-500 rounded border-white border-4px" onclick="document.getElementById('NBRid').value='7'">7</button>
