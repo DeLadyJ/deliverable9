@@ -1,32 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang "en">
     <head>
-        <script src="<script src="https://cdn.tailwindcss.com"></script></script>
+        <script src="https://cdn.tailwindcss.com"></script>
         <script scr="app.js"></script>
     </head>
     <body>
-        <div class="grid grid-rows-5 grid-flow-col gap-2" >
-            <button>c</button>
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
-            <button>/</button>
-            <button>4</button>
-            <button>5</button>
-            <button>6</button>
-            <button>*</button>
-            <button>7</button>
-            <button>8</button>
-            <button>9</button>
-            <button>-</button>
-            <button>0</button>
-            <button>.</button>
-            <button>=</button>
-            <button>+</button>
-            
-            
-        </div>
-
+        <div class="grid grid-rows-5 grid-flow-col gap-1 h-96 w-96 border-black border-1px">
+            <input class="display" type="text" id="result" col-span-3 border-black border-1px></input>
+            <button onclick="document.getElementById('CLRid').value=''">C</button>
+                <input type="reset" value="" id="CLRid">
+            <button onclick="document.getElementById('NBR').value='1'">1</button>
+            <button onclick="document.getElementById('NBR').value='4'">4</button>
+            <button onclick="document.getElementById('NBR').value='7'">7</button>
+            <button onclick="document.getElementById('NBR').value='0'">0</button>
+            <button onclick="document.getElementById('NBR').value='2'">2</button>
+            <button onclick="document.getElementById('NBR').value='5'">5</button>
+            <button onclick="document.getElementById('NBR').value='8'">8</button>
+            <button onclick="document.getElementById('NBR').value='.'">.</button>
+            <button onclick="document.getElementById('NBR').value='3'">3</button>
+            <button onclick="document.getElementById('NBR').value='6'">6</button>
+            <button onclick="document.getElementById('NBR').value='9'">9</button>
+            <button onclick="document.getElementById('NBR').value='='">=</button>
+            <button onclick="document.getElementById('NBR').value='/'">/</button>
+            <button onclick="document.getElementById('NBR').value='*'">*</button>
+            <button onclick="document.getElementById('NBR').value='-'">-</button>
+            <button onclick="document.getElementById('NBR').value='+'">+</button>
+                <input type="text" value="NBRid">
+        </div>  
     </body>
 
 
