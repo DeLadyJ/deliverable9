@@ -17,24 +17,26 @@
             }
         </script>
     </head>
-    <body class="grid grid-rows-5 grid-flow-col gap-2 h-96 w-96">
-        <input class="textarea col-span-3" id="NBR"></input>
-    <button class="bg-green-500 rounded text-center text-white text-2xl" onclick="display('1')">1</button>
-    <button class="bg-green-500 rounded text-center text-white text-2xl" onclick="display('4')">4</button>
-    <button class="bg-green-500 rounded text-center text-white text-2xl" onclick="display('7')">7</button>
-    <button class="bg-green-500 rounded text-center text-white text-2xl" onclick="display('0')">0</button>
-    <button class="bg-green-500 rounded text-center text-white text-2xl" onclick="display('2')">2</button>
-    <button class="bg-green-500 rounded text-center text-white text-2xl" onclick="display('5')">5</button>
-    <button class="bg-green-500 rounded text-center text-white text-2xl" onclick="display('8')">8</button>
-    <button class="bg-green-500 rounded text-center text-white text-2xl" onclick="display('.')">.</button>
-    <button class="bg-green-500 rounded text-center text-white text-2xl" onclick="display('3')">3</button>
-    <button class="bg-green-500 rounded text-center text-white text-2xl" onclick="display('6')">6</button>
-    <button class="bg-green-500 rounded text-center text-white text-2xl" onclick="display('9')">9</button>
-    <button class="bg-green-500 rounded text-center text-white text-2xl" onclick="answer()">=</button>
-    <button class="bg-green-500 rounded text-center text-white text-2xl" onclick="clr()">C</button>
-    <button class="bg-green-500 rounded text-center text-white text-2xl" onclick="display('/')">/</button>
-    <button class="bg-green-500 rounded text-center text-white text-2xl" onclick="display('*')">*</button>
-    <button class="bg-green-500 rounded text-center text-white text-2xl" onclick="display('-')">-</button>
-    <button class="bg-green-500 rounded text-center text-white text-2xl" onclick="display('+')">+</button>   
+    <body class="h-max">
+        <div class="grid grid-rows-5 grid-flow-col gap-2 -h-16 w-3/5 full border border-black border-2 p-1  mx-44 my-40 text-2xl">
+            <input class="textarea col-span-3 border border-black border-4 rounded-lg h-32" id="NBR"></input>
+    <button class="bg-green-700 rounded-lg text-center text-white text-2xl" onclick="display('1')">1</button>
+    <button class="bg-green-700 rounded-lg text-center text-white text-2xl" onclick="display('4')">4</button>
+    <button class="bg-green-700 rounded-lg text-center text-white text-2xl" onclick="display('7')">7</button>
+    <button class="bg-green-700 rounded-lg text-center text-white text-2xl" onclick="display('0')">0</button>
+    <button class="bg-green-700 rounded-lg text-center text-white text-2xl" onclick="display('2')">2</button>
+    <button class="bg-green-700 rounded-lg text-center text-white text-2xl" onclick="display('5')">5</button>
+    <button class="bg-green-700 rounded-lg text-center text-white text-2xl" onclick="display('8')">8</button>
+    <button class="bg-green-700 rounded-lg text-center text-white text-2xl" onclick="display('.')">.</button>
+    <button class="bg-green-700 rounded-lg text-center text-white text-2xl" onclick="display('3')">3</button>
+    <button class="bg-green-700 rounded-lg text-center text-white text-2xl" onclick="display('6')">6</button>
+    <button class="bg-green-700 rounded-lg text-center text-white text-2xl" onclick="display('9')">9</button>
+    <button class="bg-green-700 rounded-lg text-center text-white text-2xl" onclick="answer()">=</button>
+    <button class="bg-green-700 rounded-lg text-center text-white text-2xl" onclick="clr()">C</button>
+    <button class="bg-green-700 rounded-lg text-center text-white text-2xl" onclick="display('/')">/</button>
+    <button class="bg-green-700 rounded-lg text-center text-white text-2xl" onclick="display('*')">*</button>
+    <button class="bg-green-700 rounded-lg text-center text-white text-2xl" onclick="display('-')">-</button>
+    <button class="bg-green-700 rounded-lg text-center text-white text-2xl" onclick="display('+')">+</button>
+        </div>    
     </body>
 </html>
