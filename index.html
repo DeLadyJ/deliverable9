@@ -17,33 +17,25 @@
             }
         </script>
     </head>
-    <body class="text-center text-white text-2xl border-black border-solid border-1px">
-        <div class="grid grid-rows-1 grid-flow-col h-16 w-80">
-            <input class="display-block" type="text" col-span-3 border-black border-1px></input>
-                <button class="bg-green-500 rounded border-white border-4px border-4px w-24" onclick="document.getElementById('Result').value=''">C</button>
-        </div>
-        <div class="grid grid-rows-4 grid-flow-col gap-1 h-96 w-96">
-            <button class="bg-green-500 rounded border-white border-4px" onclick="document.getElementById('NBRid').value='1'">1</button>
-            <button class="bg-green-500 rounded border-white border-4px" onclick="document.getElementById('NBRid').value='4'">4</button>
-            <button class="bg-green-500 rounded border-white border-4px" onclick="document.getElementById('NBRid').value='7'">7</button>
-            <button class="bg-green-500 rounded border-white border-4px" onclick="document.getElementById('NBRid').value='0'">0</button>
-            <button class="bg-green-500 rounded border-white border-4px" onclick="document.getElementById('NBRid').value='2'">2</button>
-            <button class="bg-green-500 rounded border-white border-4px" onclick="document.getElementById('NBRid').value='5'">5</button>
-            <button class="bg-green-500 rounded border-white border-4px" onclick="document.getElementById('NBRid').value='8'">8</button>
-            <button class="bg-green-500 rounded border-white border-4px" onclick="document.getElementById('NBRid').value='.'">.</button>
-            <button class="bg-green-500 rounded border-white border-4px" onclick="document.getElementById('NBRid').value='3'">3</button>
-            <button class="bg-green-500 rounded border-white border-4px" onclick="document.getElementById('NBRid').value='6'">6</button>
-            <button class="bg-green-500 rounded border-white border-4px" onclick="document.getElementById('NBRid').value='9'">9</button>
-            <button class="bg-green-500 rounded border-white border-4px" onclick="document.getElementById('NBRid').value='='">=</button>
-            <button class="bg-green-500 rounded border-white border-4px" onclick="document.getElementById('NBRid').value='/'">/</button>
-            <button class="bg-green-500 rounded border-white border-4px" onclick="document.getElementById('NBRid').value='*'">*</button>
-            <button class="bg-green-500 rounded border-white border-4px" onclick="document.getElementById('NBRid').value='-'">-</button>
-            <button class="bg-green-500 rounded border-white border-4px" onclick="document.getElementById('NBRid').value='+'">+</button>
-        </div>
-        <div>
-            <input type="text" id="NBRid">
-            <input type="text" id="Result">
-        </div>  
+    <body class="grid grid-rows-5 grid-flow-col gap-2 h-96 w-96">
+        <input class="textarea col-span-3" type="display" id="NBRid"></input>
+    <button class="bg-green-500 rounded text-center text-white text-2xl" onclick="document.getElementById('NBRid').value +='1'">1</button>
+    <button class="bg-green-500 rounded text-center text-white text-2xl" onclick="document.getElementById('NBRid').value +='4'">4</button>
+    <button class="bg-green-500 rounded text-center text-white text-2xl" onclick="document.getElementById('NBRid').value +='7'">7</button>
+    <button class="bg-green-500 rounded text-center text-white text-2xl" onclick="document.getElementById('NBRid').value +='0'">0</button>
+    <button class="bg-green-500 rounded text-center text-white text-2xl" onclick="document.getElementById('NBRid').value +='2'">2</button>
+    <button class="bg-green-500 rounded text-center text-white text-2xl" onclick="document.getElementById('NBRid').value +='5'">5</button>
+    <button class="bg-green-500 rounded text-center text-white text-2xl" onclick="document.getElementById('NBRid').value +='8'">8</button>
+    <button class="bg-green-500 rounded text-center text-white text-2xl" onclick="document.getElementById('NBRid').value +='.'">.</button>
+    <button class="bg-green-500 rounded text-center text-white text-2xl" onclick="document.getElementById('NBRid').value +='3'">3</button>
+    <button class="bg-green-500 rounded text-center text-white text-2xl" onclick="document.getElementById('NBRid').value +='6'">6</button>
+    <button class="bg-green-500 rounded text-center text-white text-2xl" onclick="document.getElementById('NBRid').value +='9'">9</button>
+    <button class="bg-green-500 rounded text-center text-white text-2xl" onclick="document.getElementById('NBRid').solve   '='">=</button>
+    <button class="bg-green-500 rounded text-center text-white text-2xl" unclick="clear">C</button>
+    <button class="bg-green-500 rounded text-center text-white text-2xl" onclick="document.getElementById('NBRid').value +='/'">/</button>
+    <button class="bg-green-500 rounded text-center text-white text-2xl" onclick="document.getElementById('NBRid').value +='*'">*</button>
+    <button class="bg-green-500 rounded text-center text-white text-2xl" onclick="document.getElementById('NBRid').value +='-'">-</button>
+    <button class="bg-green-500 rounded text-center text-white text-2xl" onclick="document.getElementById('NBRid').value +='+'">+</button>   
     </body>
 
 
