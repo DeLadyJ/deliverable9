@@ -3,19 +3,6 @@
     <head>
         <script src="https://cdn.tailwindcss.com"></script>
         <script scr="app.js"></script>
-        <script>
-            function clr(){
-                document.getElementById('NBR').value='';
-            }
-            function display(n){
-                document.getElementById('NBR').value += n;
-            }
-            function answer(){
-                let x = document.getElementById('NBR').value;
-                let y = eval(x) 
-                document.getElementById('NBR').value = y;                
-            }
-        </script>
     </head>
     <body class="h-max">
         <div class="grid grid-rows-5 grid-flow-col gap-2 -h-16 w-3/5 full border border-black border-2 p-1  mx-44 my-40 text-2xl">
