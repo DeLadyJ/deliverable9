@@ -4,36 +4,37 @@
         <script src="https://cdn.tailwindcss.com"></script>
         <script scr="app.js"></script>
         <script>
-            function clear(){
-                document.getElementById('NBR').value="";
+            function clr(){
+                document.getElementById('NBR').value='';
             }
-            function display(){
-                document.getElementById('NBR').value += value;
+            function display(n){
+                document.getElementById('NBR').value += n;
             }
-            function calulate(){
-                let x = document.getElementById('MBR').value
-                let y = eval(x) ;                
+            function answer(){
+                let x = document.getElementById('NBR').value;
+                let y = eval(x) 
+                document.getElementById('NBR').value = y;                
             }
         </script>
     </head>
     <body class="grid grid-rows-5 grid-flow-col gap-2 h-96 w-96">
-        <input class="textarea col-span-3" type="display" id="NBR"></input>
-    <button class="bg-green-500 rounded text-center text-white text-2xl" onclick="document.getElementById('NBR').value +='1'">1</button>
-    <button class="bg-green-500 rounded text-center text-white text-2xl" onclick="document.getElementById('NBR').value +='4'">4</button>
-    <button class="bg-green-500 rounded text-center text-white text-2xl" onclick="document.getElementById('NBR').value +='7'">7</button>
-    <button class="bg-green-500 rounded text-center text-white text-2xl" onclick="document.getElementById('NBR').value +='0'">0</button>
-    <button class="bg-green-500 rounded text-center text-white text-2xl" onclick="document.getElementById('NBR').value +='2'">2</button>
-    <button class="bg-green-500 rounded text-center text-white text-2xl" onclick="document.getElementById('NBR').value +='5'">5</button>
-    <button class="bg-green-500 rounded text-center text-white text-2xl" onclick="document.getElementById('NBR').value +='8'">8</button>
-    <button class="bg-green-500 rounded text-center text-white text-2xl" onclick="document.getElementById('NBR').value +='.'">.</button>
-    <button class="bg-green-500 rounded text-center text-white text-2xl" onclick="document.getElementById('NBR').value +='3'">3</button>
-    <button class="bg-green-500 rounded text-center text-white text-2xl" onclick="document.getElementById('NBR').value +='6'">6</button>
-    <button class="bg-green-500 rounded text-center text-white text-2xl" onclick="document.getElementById('NBR').value +='9'">9</button>
-    <button class="bg-green-500 rounded text-center text-white text-2xl" onclick="document.getElementById('NBR').value   '='">=</button>
-    <button class="bg-green-500 rounded text-center text-white text-2xl" onclick="clear()">C</button>
-    <button class="bg-green-500 rounded text-center text-white text-2xl" onclick="document.getElementById('NBR').value +='/'">/</button>
-    <button class="bg-green-500 rounded text-center text-white text-2xl" onclick="document.getElementById('NBR').value +='*'">*</button>
-    <button class="bg-green-500 rounded text-center text-white text-2xl" onclick="document.getElementById('NBR').value +='-'">-</button>
-    <button class="bg-green-500 rounded text-center text-white text-2xl" onclick="document.getElementById('NBR').value +='+'">+</button>   
+        <input class="textarea col-span-3" id="NBR"></input>
+    <button class="bg-green-500 rounded text-center text-white text-2xl" onclick="display('1')">1</button>
+    <button class="bg-green-500 rounded text-center text-white text-2xl" onclick="display('4')">4</button>
+    <button class="bg-green-500 rounded text-center text-white text-2xl" onclick="display('7')">7</button>
+    <button class="bg-green-500 rounded text-center text-white text-2xl" onclick="display('0')">0</button>
+    <button class="bg-green-500 rounded text-center text-white text-2xl" onclick="display('2')">2</button>
+    <button class="bg-green-500 rounded text-center text-white text-2xl" onclick="display('5')">5</button>
+    <button class="bg-green-500 rounded text-center text-white text-2xl" onclick="display('8')">8</button>
+    <button class="bg-green-500 rounded text-center text-white text-2xl" onclick="display('.')">.</button>
+    <button class="bg-green-500 rounded text-center text-white text-2xl" onclick="display('3')">3</button>
+    <button class="bg-green-500 rounded text-center text-white text-2xl" onclick="display('6')">6</button>
+    <button class="bg-green-500 rounded text-center text-white text-2xl" onclick="display('9')">9</button>
+    <button class="bg-green-500 rounded text-center text-white text-2xl" onclick="answer()">=</button>
+    <button class="bg-green-500 rounded text-center text-white text-2xl" onclick="clr()">C</button>
+    <button class="bg-green-500 rounded text-center text-white text-2xl" onclick="display('/')">/</button>
+    <button class="bg-green-500 rounded text-center text-white text-2xl" onclick="display('*')">*</button>
+    <button class="bg-green-500 rounded text-center text-white text-2xl" onclick="display('-')">-</button>
+    <button class="bg-green-500 rounded text-center text-white text-2xl" onclick="display('+')">+</button>   
     </body>
 </html>
