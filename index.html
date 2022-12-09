@@ -2,26 +2,29 @@
 <html lang "en">
     <head>
         <script src="https://cdn.tailwindcss.com"></script>
-        <script scr="app.js"></script>
+        <script src="app.js"></script>
+
     </head>
-    <body class=" grid grid-rows-5 grid-flow-col gap-2">
+    <body>
+        <div class="grid grid-rows-5 grid-flow-col gap-2 -h-16 w-3/5 full border border-black border-2 p-1  mx-44 my-40 text-2xl">
         <input class="col-span-3" type="textarea" id="NBR">
-        <button onclick="display('1')">1</button>
-        <button onclick="display('2')">2</button>
-        <button onclick="display('3')">3</button>
-        <button onclick="display('4')">4</button>
-        <button onclick="display('5')">5</button>
-        <button onclick="display('6')">6</button>
-        <button onclick="display('7')">7</button>
-        <button onclick="display('8')">8</button>
-        <button onclick="display('9')">9</button>
-        <button onclick="display('0')">0</button>
-        <button onclick="answer()">=</button>
-        <button onclick="clr()">C</button>
-        <button onclick="display('.')">.</button>
-        <button onclick="display('/')">/</button>
-        <button onclick="display('*')">*</button>
-        <button onclick="display('-')">-</button>
-        <button onclick="display('+')">+</button>
+        <button class="bg-green-700 rounded-lg text-center text-white text-4xl font-bold" onclick="display('1')">1</button>
+        <button class="bg-green-700 rounded-lg text-center text-white text-4xl font-bold" onclick="display('4')">4</button>
+        <button class="bg-green-700 rounded-lg text-center text-white text-4xl font-bold" onclick="display('7')">7</button>
+        <button class="bg-green-700 rounded-lg text-center text-white text-4xl font-bold" onclick="display('0')">0</button>
+        <button class="bg-green-700 rounded-lg text-center text-white text-4xl font-bold" onclick="display('2')">2</button>
+        <button class="bg-green-700 rounded-lg text-center text-white text-4xl font-bold" onclick="display('5')">5</button>
+        <button class="bg-green-700 rounded-lg text-center text-white text-4xl font-bold" onclick="display('8')">8</button>
+        <button class="bg-green-700 rounded-lg text-center text-white text-4xl font-bold" onclick="display('.')">.</button>
+        <button class="bg-green-700 rounded-lg text-center text-white text-4xl font-bold" onclick="display('3')">3</button>
+        <button class="bg-green-700 rounded-lg text-center text-white text-4xl font-bold" onclick="display('6')">6</button>
+        <button class="bg-green-700 rounded-lg text-center text-white text-4xl font-bold" onclick="display('9')">9</button>
+        <button class="bg-green-700 rounded-lg text-center text-white text-4xl font-bold" onclick="answer()">=</button>
+        <button class="bg-green-700 rounded-lg text-center text-white text-4xl font-bold" onclick="clr()">C</button>
+        <button class="bg-green-700 rounded-lg text-center text-white text-4xl font-bold" onclick="display('/')">/</button>
+        <button class="bg-green-700 rounded-lg text-center text-white text-4xl font-bold" onclick="display('*')">*</button>
+        <button class="bg-green-700 rounded-lg text-center text-white text-4xl font-bold" onclick="display('-')">-</button>
+        <button class="bg-green-700 rounded-lg text-center text-white text-4xl font-bold" onclick="display('+')">+</button>
+        </div>
 </body>
 </html>

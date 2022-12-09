@@ -6,6 +6,6 @@ function display(n){
 }
 function answer(){
     let x = document.getElementById('NBR').value;
-    let y = eval(x) 
+    let y = eval(x); 
     document.getElementById('NBR').value = y;                
 }
